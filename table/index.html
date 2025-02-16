@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>table</title>
+        <style>
+            div{
+                display:flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            table, th,td{
+                border: 1px solid;
+                border-collapse: collapse;
+                text-align:center;
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Table data</h2>
+            <table>
+                <caption style="text-align: left">Mark details</caption>
+                <colgroup>
+                    <col span="1" style="background-color: grey"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Roll no.</th>
+                        <th rowspan="2">name</th>
+                        <th rowspan="2">Place</th>
+                        <th colspan="4" >subject marks</th>
+                    </tr>
+                    <tr>
+                        <th>maths</th>
+                        <th>language</th>
+                        <th>science</th>
+                        <th>social</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>Santhosh</td>
+                    <td>chennai</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

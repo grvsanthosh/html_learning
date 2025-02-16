@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+        input {
+            
+           
+            display:block;
+            margin:10px 0 10px 0;
+        }
+        div{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center; 
+             align-items: center;         
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <h2>Registration form</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" size="50"/>
+            <label for="mail">Mail</label>
+            <!-- email validation -->
+            <input type="email" id="mail" name="mail" required size="50"/>
+            <label for="phone"><pre>Mobile No.</pre></label>
+            <!-- pattern -->
+            <input type="tel" id="phone" name="phone" size="50" pattern="[0-9]{10}"/>
+            <label for="gender">Gender</label></br>
+            <input style="display: inline" type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+            <input style="display: inline" type="radio" id="female" name="gender"/>
+            <label for="female">Female</label></br>
+            <label for="city">City</label></br>
+            <select id="city" name="city" >
+                <option value="">Select</option>
+                <optgroup label="TN">
+                    <option value="CHN">Chennai</option>
+                </optgroup>
+                <optgroup label="KE">
+                    <option value="KOC">Kochin</option>
+                </optgroup>
+            </select></br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="enter 4 character pin" maxlength="4" min="1" max="4"/>
+            <label for="file">Attach file</label>
+            <input type="file" id="file" name="file" multiple />
+            <input type="submit" size="20"/>
+            <input type="reset"size="20" />
+
+        </form>
+    </div>
+</body>
+</html>
