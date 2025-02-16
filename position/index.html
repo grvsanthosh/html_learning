@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>position types</title>
+    <style>
+        .container{
+            background-color: rgb(125, 125, 182);
+            border: 3px solid black;
+            box-shadow: auto;
+            width: 80vw;
+            height:210vh;
+        }
+        .container > div {
+            font-size: 15px;
+            /* padding: 10px; */
+            border: 2px solid black;
+            margin: 20px;
+            padding: 10px;
+            display:block;
+            text-align: center;
+            background-color: rgb(192, 192, 213);
+        }
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+            top: 5px;
+            
+        }
+        .absolute{
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index:1;
+        }
+        .fixed{
+            position: fixed;
+            top:600px;
+            left:640px;
+        }
+        .sticky{
+            position: sticky;
+            top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- occupies default position in document -->
+        <div class="static">static</div>
+         <!-- positioned relative to its original postion in document and never let other element to occupy original position -->
+        <div class="relative">relative</div>
+        <!-- positioned relative to its nearest positioned ancestor (not static) or if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. -->
+        <div class="absolute">absolute</div>
+        <!-- is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled -->
+        <div class="fixed">fixed</div>
+        <br>
+        <br>
+        <br>
+        <!-- is positioned based on the user's scroll position toggles between relative and fixed, depending on the scroll position -->
+        <div class="sticky">sticky</div>
+        
+    </div>
+    
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>flex no wrap default</title>
+    <style>
+        .parent1{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:start;
+            align-items:start;
+            border: 2px solid black;
+        }
+        .parent2{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content:center;
+            align-items:center;
+            align-content:start;
+            height:60vh;
+            border: 2px solid black;
+            
+        }
+        h2{
+            background-color: yellow;
+            margin:15px;
+            padding:10px;
+        }
+        h3{
+            background-color: red;
+            margin:15px;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child1">
+            <h2>This is <strong>h2</strong> in container 1..</h2>
+        </div>
+        <div class="child2">
+            <h3>This is <strong>h3</strong> in container 3</h3>
+        </div>
+        <div class="parent2">
+            <div class="child3">
+                <h2>This is <strong>h2</strong> in container 1..</h2>
+            </div>
+            <div class="child4">
+                <h3>This is <strong>h3</strong> in container 3</h3>
+            </div>
+            <div class="child4">
+                <h3>This is <strong>h3</strong> in container 3</h3>
+            </div>
+            <div class="child4">
+                <h3>This is <strong>h3</strong> in container 3</h3>
+            </div>
+            <div class="child4">
+                <h3>This is <strong>h3</strong> in container 3</h3>
+            </div>
+           
+        </div>
+        
+    </div>
+    
+    
+
+</body>
