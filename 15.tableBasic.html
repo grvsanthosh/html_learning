@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>table basic</title>
+        <style>
+            table {
+                margin: auto;
+            }
+            table,th,td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-style: double;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Basic table</caption>
+            <colgroup>
+                <col span="1" style="background-color:grey;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>phone number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>santhosh</td>
+                    <td>1232445</td>
+                </tr>
+                <tr>
+                    <td>ragu</td>
+                    <td>98698863</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>two names</td>
+                    <td>two numbers</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

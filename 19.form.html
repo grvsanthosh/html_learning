@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form element</title>
+        <style>
+            div {
+               text-align:center;
+                background-color:lightgrey;
+            }
+            form{
+                text-align:left;
+                margin: 0 15px 0 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Application Form</h1>
+            <form>
+                <fieldset >
+                    <legend style="text-align:left">Basic details</legend>
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname">
+                    <label for="mname">Middle name</label>
+                    <input type="text" name="mname">
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname"><br><br>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" min="18" max="40"><br><br>
+                    <label for="gender">gender</label><br><br>
+                    <input type="radio" name="gen" value="male">
+                    <label for="gen">Male</label><br>
+                    <input type="radio" name="gen" value="female">
+                    <label for="gen">Female</label><br><br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">select</option>
+                        <optgroup label="Asia">
+                            <option value="ind">India</option>
+                            <option value="chi">China</option>
+                        </optgroup>
+                        <optgroup label="USA">
+                            <option value="can">Canada</option>
+                            <option value="Mex">Mexico</option>
+                        </optgroup>
+                    </select><br><br>
+                    <label for="address">address</label><br>
+                    <textarea id="address" name="address" rows="5" cols="60"></textarea><br><br>
+                    <label for="browser">Browser</label>
+                    <input type="text" id="browser" name="browser" list="browsers">
+                    <datalist id="browsers">
+                        <option value="edge"></option>
+                        <option value="chrome"></option>
+                        <option value="firefox"></option>
+                    </datalist><br><br>
+                    <input type="submit" value="submit">
+            &nbsp;
+            <input type="reset" value="reset">
+                </fieldset><br>
+                
+            </form>
+            
+        </div>
+    </body>
+</html>
